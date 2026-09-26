@@ -1,0 +1,814 @@
+{
+  "spec": "carril-a/manifest",
+  "version": "0.1",
+  "fecha": "2026-09-26",
+  "proyecto": "SOFIA-RECUPERA / SPEC-GRAPHRAG-001 (gate GB-0)",
+  "chunking": "recursive ~512-1024 tokens (1900-3800 chars), SIN overlap (evidencia E5)",
+  "registro_documental": {
+    "biblioteca": "Biblioteca Programa Sofia Human AI 07/2026",
+    "total_docs": 113,
+    "nota": "cada doc queda registrado con 1 entrada; chunking por doc se materializa bajo demanda (lazy) en GB-1",
+    "docs": [
+      {
+        "doc_id": "9d96727d-6a16-417f-86f2-0da531703aa2",
+        "nombre": "SOFIA_Tensor_Framework_v6.md",
+        "extension": "md",
+        "bytes": 11731
+      },
+      {
+        "doc_id": "dbaadb5e-4d34-4feb-b292-d3792d2880d9",
+        "nombre": "Claude Fable.pdf",
+        "extension": "pdf",
+        "bytes": 881703
+      },
+      {
+        "doc_id": "457080b3-66e1-40ce-97eb-a5e098157a1d",
+        "nombre": "1-bit-bonsai-8b-whitepaper.pdf",
+        "extension": "pdf",
+        "bytes": 422015
+      },
+      {
+        "doc_id": "909073ca-016e-413b-b280-2a283d42ee46",
+        "nombre": "Founders Playbook Anthropic - Start Ups.pdf",
+        "extension": "pdf",
+        "bytes": 381776
+      },
+      {
+        "doc_id": "432a94a8-5937-4a3a-8202-b1f5c1486b73",
+        "nombre": "Tema_  ARQUITECTURA QUANTICA INSPIRADA EN COMPUTAD.md",
+        "extension": "md",
+        "bytes": 10588
+      },
+      {
+        "doc_id": "1fb54508-f89e-4b2c-8817-76d4786ff5b8",
+        "nombre": "Como usar mejor [https___docs.github.com_es_copilo.md",
+        "extension": "md",
+        "bytes": 89294
+      },
+      {
+        "doc_id": "773c8854-2e8c-4934-82dc-4dbba7645df8",
+        "nombre": "SOFIA gestor de gmail. Puedes continuar su desarro.md",
+        "extension": "md",
+        "bytes": 129282
+      },
+      {
+        "doc_id": "f45e47ed-a5ea-431c-b99e-e8a9063b41e0",
+        "nombre": "pla_de_medicacio_VIFE0571105006_20260709.pdf",
+        "extension": "pdf",
+        "bytes": 89747
+      },
+      {
+        "doc_id": "dc31227f-db6f-4fa4-9863-9a2870b99a06",
+        "nombre": "sofia-github-matrix.html",
+        "extension": "html",
+        "bytes": 30315
+      },
+      {
+        "doc_id": "d4f30491-87ec-4499-94af-614fba095ac4",
+        "nombre": "Grupo_1_DeepTech_QuantumComputing_BD_Internacional_Maestro.pdf",
+        "extension": "pdf",
+        "bytes": 79146
+      },
+      {
+        "doc_id": "9a10bd8c-ea99-4845-a00e-84d4f22e6804",
+        "nombre": "Grupo_3_CustomerService_CX_Manager_Maestro.pdf",
+        "extension": "pdf",
+        "bytes": 66061
+      },
+      {
+        "doc_id": "8cf5d6bc-98cd-4c2f-ae9f-a566d74b9b9c",
+        "nombre": "@Postman @Read AI @Supabase @Vercel @Todoist @Noti.md",
+        "extension": "md",
+        "bytes": 8339
+      },
+      {
+        "doc_id": "6b7c993f-5db1-4bad-81ca-759036d3a3ae",
+        "nombre": "Informe_SOFIA-HF_TD-AVF_2026-07-08.md",
+        "extension": "md",
+        "bytes": 16267
+      },
+      {
+        "doc_id": "0a7f95ed-f46a-4275-9a23-53629fcce050",
+        "nombre": "1.  Revisa el hilo consolidando los resultados obt.md",
+        "extension": "md",
+        "bytes": 13606
+      },
+      {
+        "doc_id": "01fdda14-b646-421e-91b7-50a56895137a",
+        "nombre": "Propuesta_SOFIA-Mesh-MCQAS_2026-07-08.md",
+        "extension": "md",
+        "bytes": 17004
+      },
+      {
+        "doc_id": "ff2b9f3b-d2e2-4e8e-97d7-e412b98a11d7",
+        "nombre": "1. A partir de ahora usa como gatillo_skill denomi.md",
+        "extension": "md",
+        "bytes": 26049
+      },
+      {
+        "doc_id": "d638b5ee-bcc8-4c52-aac2-a1f91a8db924",
+        "nombre": "Grupo_4_Administrative_ExecutiveAssistant_Maestro.pdf",
+        "extension": "pdf",
+        "bytes": 74628
+      },
+      {
+        "doc_id": "6e50e75e-fdc2-49c4-b8e0-d1163957da44",
+        "nombre": "Desde mi perspectiva actual, necesito un informe q.md",
+        "extension": "md",
+        "bytes": 45059
+      },
+      {
+        "doc_id": "70addfe6-5d29-4934-b078-f5aedaff955c",
+        "nombre": "Seguimos trabajando en entorno SANDBOX.  1.  Apren.md",
+        "extension": "md",
+        "bytes": 16347
+      },
+      {
+        "doc_id": "07bcf940-1637-489a-80fd-9e95569a2927",
+        "nombre": "&gt;&gt; Preguntas mínimas para esta fase Sandbox.md",
+        "extension": "md",
+        "bytes": 19871
+      },
+      {
+        "doc_id": "e93d4009-7a09-489f-849e-888ae6230aed",
+        "nombre": "Grupo_2_StrategicKAM_BusinessDevelopment_Maestro.pdf",
+        "extension": "pdf",
+        "bytes": 67001
+      },
+      {
+        "doc_id": "402f5aeb-f89c-4fe8-bd11-f175c5115ac2",
+        "nombre": "Informe-Unificado-SOFIA-GitHub-ProtAutom-Conectores.md",
+        "extension": "md",
+        "bytes": 13561
+      },
+      {
+        "doc_id": "f34f2385-5135-475d-9743-041551fcfcbc",
+        "nombre": "Realiza un piloto de analisis de 500 emails entre.md",
+        "extension": "md",
+        "bytes": 5672
+      },
+      {
+        "doc_id": "c092b810-a60d-4deb-8029-d5e74c7a0e3f",
+        "nombre": "pasointermedio.txt",
+        "extension": "txt",
+        "bytes": 4066
+      },
+      {
+        "doc_id": "108667ca-16a6-4a06-b40a-92794b620974",
+        "nombre": "sofia-mesh-bootstrap.sh",
+        "extension": "sh",
+        "bytes": 5346
+      },
+      {
+        "doc_id": "a460b573-7658-4d32-8b79-afcb805734a4",
+        "nombre": "@Postman @Read AI @Supabase @Todoist @Notion @Line.md",
+        "extension": "md",
+        "bytes": 9806
+      },
+      {
+        "doc_id": "966d1965-7219-42f1-806f-24b32b28f92f",
+        "nombre": "sofia-mesh-bootstrap (1).sh",
+        "extension": "sh",
+        "bytes": 5983
+      },
+      {
+        "doc_id": "510fecc8-7081-463c-8847-c0bc985a46b5",
+        "nombre": "SOFIA_T9_Multiverse_Blueprint_09072026.md",
+        "extension": "md",
+        "bytes": 17385
+      },
+      {
+        "doc_id": "8fa83df8-c921-4f2c-ab09-c46c3bae153a",
+        "nombre": "FASE C — Revisión Conectores MCP_ GitHub_VS Code +.md",
+        "extension": "md",
+        "bytes": 9151
+      },
+      {
+        "doc_id": "21d960e9-c0e0-4f27-9a09-a8c4719db6ec",
+        "nombre": "sigue.md",
+        "extension": "md",
+        "bytes": 16619
+      },
+      {
+        "doc_id": "1d9e32e0-7a04-4e16-8778-36b2fa288914",
+        "nombre": "GUIA-implementacion-protauto.md",
+        "extension": "md",
+        "bytes": 13428
+      },
+      {
+        "doc_id": "bca708c5-ee7c-4e75-8782-6b74666ca557",
+        "nombre": "protAuto-acceso-github.md",
+        "extension": "md",
+        "bytes": 6262
+      },
+      {
+        "doc_id": "d0bc638e-2d64-4a95-a818-f583e0ab53bc",
+        "nombre": "Contrato_SOFIALAB_MemoryCore_TD-AVF_v0.1_2026-07-10.md",
+        "extension": "md",
+        "bytes": 5238
+      },
+      {
+        "doc_id": "e7041c4b-7832-4494-a99a-068caca50846",
+        "nombre": "FASE-0-SCRIPT.sh",
+        "extension": "sh",
+        "bytes": 1617
+      },
+      {
+        "doc_id": "28521f3d-6a36-4c8e-a396-1d5099ec0e94",
+        "nombre": "protauto V2.md",
+        "extension": "md",
+        "bytes": 8557
+      },
+      {
+        "doc_id": "f5e265d5-c0f7-47e8-aaa9-bbd483560a71",
+        "nombre": "twin-yaml-template.yaml",
+        "extension": "yaml",
+        "bytes": 1857
+      },
+      {
+        "doc_id": "d375b6c3-4431-4181-a6fa-699e7abc3ff0",
+        "nombre": "macqas_connector_skeleton.py",
+        "extension": "py",
+        "bytes": 4565
+      },
+      {
+        "doc_id": "7e42c9c3-2a32-4cf6-8b1b-134f3ae91fe3",
+        "nombre": "vault-40-lecciones-sofia-mesh-hilo-fundacional.md",
+        "extension": "md",
+        "bytes": 3770
+      },
+      {
+        "doc_id": "de3c6995-d517-4729-a425-d4fdb88843d9",
+        "nombre": "Sistema Metodologico Proyectos SOFIA.md",
+        "extension": "md",
+        "bytes": 11674
+      },
+      {
+        "doc_id": "f9181756-b91c-4139-8937-f1fc4cb7048e",
+        "nombre": "SKILL-sofia-select-methodology.md",
+        "extension": "md",
+        "bytes": 4121
+      },
+      {
+        "doc_id": "65ceb2ea-9aed-49bd-a105-0ca1b8bc2d41",
+        "nombre": "REVISION-dialectica-experimental-v1-1.md",
+        "extension": "md",
+        "bytes": 12302
+      },
+      {
+        "doc_id": "5bb56a95-b887-4ace-8a1c-db24546ad39a",
+        "nombre": "SOFIA_Tensor_Framework_v7_ejecucion.md",
+        "extension": "md",
+        "bytes": 3748
+      },
+      {
+        "doc_id": "a71dc5db-fb24-47c9-a6e8-7a0e478fa414",
+        "nombre": "SKILL-sofia-copilot-hardening.md",
+        "extension": "md",
+        "bytes": 4102
+      },
+      {
+        "doc_id": "d2d97e9a-5bb5-46f9-b636-2058b70c29d3",
+        "nombre": "FASE-0-checklist-terminal.md",
+        "extension": "md",
+        "bytes": 3717
+      },
+      {
+        "doc_id": "5aec5c8d-9180-46a5-9127-95b2b1e30b07",
+        "nombre": "SOFIA_Tensor_Framework_v5.md",
+        "extension": "md",
+        "bytes": 13346
+      },
+      {
+        "doc_id": "395035fc-39f5-4ff8-b166-941e90a265c2",
+        "nombre": "sofia-doc-hygiene-workflow.md",
+        "extension": "md",
+        "bytes": 2094
+      },
+      {
+        "doc_id": "18a64198-56d0-4f3f-8c8a-6497b9a33821",
+        "nombre": "perplexity_json_to_md (1).py",
+        "extension": "py",
+        "bytes": 3344
+      },
+      {
+        "doc_id": "02e1a910-28e9-43fc-a57a-7748c6cf8df2",
+        "nombre": "PROMPT-claude-code-protauto-plus.md",
+        "extension": "md",
+        "bytes": 3714
+      },
+      {
+        "doc_id": "832bbd8f-3f95-4199-b3f2-d23697acce10",
+        "nombre": "Integracion-protauto-v2-copilot-hardening.md",
+        "extension": "md",
+        "bytes": 6589
+      },
+      {
+        "doc_id": "97299797-2e1f-46c2-bd9b-330b1f1e1128",
+        "nombre": "perplexity_json_to_md.py",
+        "extension": "py",
+        "bytes": 3344
+      },
+      {
+        "doc_id": "e6c14d5d-32fc-4f6e-b1b0-1cbceede988f",
+        "nombre": "plantilla_calls_sofia_protears.md",
+        "extension": "md",
+        "bytes": 10042
+      },
+      {
+        "doc_id": "1460a466-a78e-4d19-b718-661f1db8aac1",
+        "nombre": "FASE-0-checklist-terminal (1).md",
+        "extension": "md",
+        "bytes": 3853
+      },
+      {
+        "doc_id": "bf6eabb8-dfaf-46f6-a30e-956148a79b3c",
+        "nombre": "Grupo_2_StrategicKAM_BusinessDevelopment_Maestro.docx",
+        "extension": "docx",
+        "bytes": 17221
+      },
+      {
+        "doc_id": "8c84a65d-f230-4f07-acfb-29e7f0a6246e",
+        "nombre": "SOFIA_Tensor_Framework_v3_ECTOA (1).md",
+        "extension": "md",
+        "bytes": 13564
+      },
+      {
+        "doc_id": "5e07a711-da49-482d-b406-08b12b9f564d",
+        "nombre": "HORIZON-INFRA-2026-TECH-01-02.md",
+        "extension": "md",
+        "bytes": 5235
+      },
+      {
+        "doc_id": "b18a60ef-53f1-4cb7-89a8-e1ca4efe2715",
+        "nombre": "Grupo_4_Administrative_ExecutiveAssistant_Maestro.docx",
+        "extension": "docx",
+        "bytes": 16132
+      },
+      {
+        "doc_id": "b99919a9-29bf-4423-b988-981f8488fec5",
+        "nombre": "Grupo_3_CustomerService_CX_Manager_Maestro.docx",
+        "extension": "docx",
+        "bytes": 15665
+      },
+      {
+        "doc_id": "03f14a22-9ff0-4d05-95e6-15c0935803d4",
+        "nombre": "ficha_infra_eosc_02.md",
+        "extension": "md",
+        "bytes": 4446
+      },
+      {
+        "doc_id": "1617fc11-ed57-4e06-8d5d-057e880c29cd",
+        "nombre": "PROMPT-claude-code-fase-0-5-inspeccion.md",
+        "extension": "md",
+        "bytes": 4616
+      },
+      {
+        "doc_id": "b1f014c3-02bc-4a83-a5bf-00ed77e1f6bc",
+        "nombre": "Ejecucion_Gmail Queue Piloto-Stack.md",
+        "extension": "md",
+        "bytes": 16012
+      },
+      {
+        "doc_id": "7d1dc0d4-d0b5-4dc1-a7a4-ba6c5fc90f3d",
+        "nombre": "Acta_Revision_Reconciliacion_SOFIA_2026-07-11.md",
+        "extension": "md",
+        "bytes": 10350
+      },
+      {
+        "doc_id": "77f79dd8-c6f2-43ba-ae2d-c3aaf2a743c9",
+        "nombre": "los dos, secuencialmente.md",
+        "extension": "md",
+        "bytes": 11565
+      },
+      {
+        "doc_id": "de63306c-ab29-494f-993c-bb5365bba669",
+        "nombre": "Sintesis_Dialectica_SOFIA-Human-AI_Areas-Interes_2026-07-10.md",
+        "extension": "md",
+        "bytes": 37037
+      },
+      {
+        "doc_id": "96faf474-92f1-40e5-8b08-08b3230dc6cb",
+        "nombre": "FASE-0-CHECKLIST.txt",
+        "extension": "txt",
+        "bytes": 3057
+      },
+      {
+        "doc_id": "e68311b4-9d7d-4d7c-8ec6-666aeeafcccf",
+        "nombre": "plantilla_costes_modelos_open_source.md",
+        "extension": "md",
+        "bytes": 5780
+      },
+      {
+        "doc_id": "a0f4a679-b203-47a2-a480-ee5f51bc9f1d",
+        "nombre": "Evaluacion de costes en FRONTIER AI (BENCHMARKING).md",
+        "extension": "md",
+        "bytes": 7828
+      },
+      {
+        "doc_id": "3ee32ac5-f7b7-468d-a69f-d691d17eb5c9",
+        "nombre": "PANEL-CONTROL-SOFIA-2026-07-11.md",
+        "extension": "md",
+        "bytes": 25241
+      },
+      {
+        "doc_id": "c1fb26fc-54a5-482e-9cd6-3a4a183e9a15",
+        "nombre": "Nvidia CUDA, AMD ROCm, Google TPU, Intel oneAPI y.md",
+        "extension": "md",
+        "bytes": 6128
+      },
+      {
+        "doc_id": "d7511869-55d3-4885-beae-644bc8ba736c",
+        "nombre": "Plan_Ejecucion_Practica_SOFIA_Ciclos_T1_T2_2026-07-11.md",
+        "extension": "md",
+        "bytes": 15714
+      },
+      {
+        "doc_id": "6b06c21e-dac6-4e5f-969b-39993cd0560b",
+        "nombre": "Plantilla Markdown para medir costes de inferencia.md",
+        "extension": "md",
+        "bytes": 5072
+      },
+      {
+        "doc_id": "9b76f8f3-a798-42a2-a231-a10b0cee2632",
+        "nombre": "Informe operativo unificado_ conocimiento, soporte.md",
+        "extension": "md",
+        "bytes": 22456
+      },
+      {
+        "doc_id": "245c88c7-4714-4d4c-be52-46f699d8f2da",
+        "nombre": "Protocolo_Cientifico_Test_a_Piloto_SOFIA_2026-07-11 (1).md",
+        "extension": "md",
+        "bytes": 10336
+      },
+      {
+        "doc_id": "edde2a06-39c3-49aa-a513-addf08176f19",
+        "nombre": "daily_queue_reporter.py",
+        "extension": "py",
+        "bytes": 7143
+      },
+      {
+        "doc_id": "21f4afe4-dd30-4b0c-a41f-5e99540a2c3c",
+        "nombre": "Me basta con un ejemplo completo aplicado a onboar.md",
+        "extension": "md",
+        "bytes": 7594
+      },
+      {
+        "doc_id": "9e4b8f6d-0f50-49f1-a1fc-007f1d87ad1c",
+        "nombre": "si, desarrollalo dew manera completa y profunda, a.md",
+        "extension": "md",
+        "bytes": 12908
+      },
+      {
+        "doc_id": "5da02ac8-3aed-4280-8c64-2df689e30d64",
+        "nombre": "mcp_orchestrator.py",
+        "extension": "py",
+        "bytes": 11705
+      },
+      {
+        "doc_id": "32c8156d-28b1-4355-be97-eba24e41776d",
+        "nombre": "Obsidian_SOFIA_00-Index_MOC (1).md",
+        "extension": "md",
+        "bytes": 4914
+      },
+      {
+        "doc_id": "27a52b4e-b358-4ac4-ad1a-810aa885d721",
+        "nombre": "Obsidian_SOFIA_00-Index_MOC (2).md",
+        "extension": "md",
+        "bytes": 4914
+      },
+      {
+        "doc_id": "6c486841-fe03-4519-bdb8-e9d328be7b92",
+        "nombre": "Plan Maestro.pdf",
+        "extension": "pdf",
+        "bytes": 3109433
+      },
+      {
+        "doc_id": "5b6317e3-0a93-443d-b78d-8062fa08aaf8",
+        "nombre": "De los siguientes 4 ficheros de este Space_.md",
+        "extension": "md",
+        "bytes": 17005
+      },
+      {
+        "doc_id": "0fff6d19-d515-4a0a-b8d0-cf840e139f5a",
+        "nombre": "sofia-estado.yaml",
+        "extension": "yaml",
+        "bytes": 17998
+      },
+      {
+        "doc_id": "9d334e42-cc0b-4608-a9d8-c408d446c8e3",
+        "nombre": "PROGRAMA_SOFIA_HUMAN_AI_Consolidacion_v1.1.md",
+        "extension": "md",
+        "bytes": 15417
+      },
+      {
+        "doc_id": "fc01e8fd-b540-41dc-a01a-45d16100d71d",
+        "nombre": "ITERACION_01_Analisis_Contradictorio_Product_Thinking.md",
+        "extension": "md",
+        "bytes": 16016
+      },
+      {
+        "doc_id": "d91fc043-a248-44c6-8a78-8e0ac6dc86ae",
+        "nombre": "plan-maestro-sofia-human-ai-v2-0-corregido.md",
+        "extension": "md",
+        "bytes": 27793
+      },
+      {
+        "doc_id": "1bdaf08b-2da2-4fba-bf6c-809855df7325",
+        "nombre": "PROGRAMA_SOFIA_HUMAN_AI_Consolidacion_2026_Q3.md",
+        "extension": "md",
+        "bytes": 15549
+      },
+      {
+        "doc_id": "7f5cb4c7-d546-4e6a-90cb-56af8dbba3de",
+        "nombre": "avfrere-github-maestro.md",
+        "extension": "md",
+        "bytes": 8524
+      },
+      {
+        "doc_id": "defacb9a-22a6-4be0-8e12-6113c9bca0af",
+        "nombre": "ADR-0004-politica-inferencia-L0-L1-L2.md",
+        "extension": "md",
+        "bytes": 4554
+      },
+      {
+        "doc_id": "67ccd6c9-4438-4ea1-b747-a05eccd8cac9",
+        "nombre": "ANEXO_B_Tecnico_Infraestructura (1).md",
+        "extension": "md",
+        "bytes": 5532
+      },
+      {
+        "doc_id": "58e0e26d-8d2f-49bc-9f37-5ba65734ae97",
+        "nombre": "LOTES_RESUMEN_EJECUTIVO_Explicado.md",
+        "extension": "md",
+        "bytes": 29185
+      },
+      {
+        "doc_id": "13ca1a62-9e35-4c45-8e2c-bc30856af126",
+        "nombre": "De los siguientes 10 ficheros de este Space_.md",
+        "extension": "md",
+        "bytes": 21106
+      },
+      {
+        "doc_id": "008a5b62-a17e-4d65-9855-b2c4189b9246",
+        "nombre": "CONTEXT LOOP ENGINEERING.md",
+        "extension": "md",
+        "bytes": 5564
+      },
+      {
+        "doc_id": "4ad26895-bea9-4d1d-b0eb-1ad90da1565b",
+        "nombre": "plan-maestro-sofia-human-ai-v2-0-corregido (1).md",
+        "extension": "md",
+        "bytes": 43553
+      },
+      {
+        "doc_id": "91ded589-cbf7-4767-b3d7-e8544c9e3265",
+        "nombre": "LOTE_3_GUIA_EJECUCION_HOY_12JUL.md",
+        "extension": "md",
+        "bytes": 11152
+      },
+      {
+        "doc_id": "482f034f-21ce-45a2-bf2a-103554117712",
+        "nombre": "repite con analisis coste_beneficio y priorizacion.md",
+        "extension": "md",
+        "bytes": 9317
+      },
+      {
+        "doc_id": "9bc42fc9-c7e4-49bc-a098-12d2aa15af85",
+        "nombre": "plantilla-notion-sofia-cola-dinamica-kavafis.md",
+        "extension": "md",
+        "bytes": 6455
+      },
+      {
+        "doc_id": "4a3d51b9-1b44-4bbb-a7df-cc81e142c494",
+        "nombre": "SMOKE_TEST_15_PROMPTS_L1_Canonicos (1).md",
+        "extension": "md",
+        "bytes": 10646
+      },
+      {
+        "doc_id": "a40a562c-e9d3-43cd-9cc7-4ca4e89a1c0d",
+        "nombre": "Lote 3 bis.md",
+        "extension": "md",
+        "bytes": 8942
+      },
+      {
+        "doc_id": "ca338a40-4bfc-4acb-bfcd-2beac737b70c",
+        "nombre": "SMOKE_TEST_15_PROMPTS_L1_Canonicos.md",
+        "extension": "md",
+        "bytes": 10646
+      },
+      {
+        "doc_id": "f2b05f1e-e8d5-4cfe-a336-7f5d2d23c711",
+        "nombre": "Proyecto_Sofia_Human_AI_AVF_Consolidado_2026-07-13.md",
+        "extension": "md",
+        "bytes": 10754
+      },
+      {
+        "doc_id": "1a4844ac-059d-4ba6-a022-4f3802ab3e66",
+        "nombre": "ANEXO_A_Interno_Gobernanza.md",
+        "extension": "md",
+        "bytes": 3963
+      },
+      {
+        "doc_id": "6c5146fc-448e-43cf-917f-0796a5105107",
+        "nombre": "Space Proyecto Sofia Human AI 13-07-2026.md",
+        "extension": "md",
+        "bytes": 20754
+      },
+      {
+        "doc_id": "7d3d8a13-8ec4-47cf-9295-25721acfc1f0",
+        "nombre": "The AI Maker - How I Built an AI Self-Discovery Loop With NotebookLM and Claude Code.pdf",
+        "extension": "pdf",
+        "bytes": 2071487
+      },
+      {
+        "doc_id": "57c9f98a-a505-4ba2-973b-25897b092f4f",
+        "nombre": "IT - Retorno de Activos30AlbertVila.pdf",
+        "extension": "pdf",
+        "bytes": 234634
+      },
+      {
+        "doc_id": "13a2e08c-bc1c-4bcf-9df6-81b4de4c754d",
+        "nombre": "Revisa los documentos reales del espacio ampliando.md",
+        "extension": "md",
+        "bytes": 16790
+      },
+      {
+        "doc_id": "821c1211-ab00-48f5-a390-c68f948af5d4",
+        "nombre": "Repite revisando todos y cada uno de los hilos y d.md",
+        "extension": "md",
+        "bytes": 13788
+      },
+      {
+        "doc_id": "0acf2b11-e97d-4eaf-b74c-f326fff3e2ed",
+        "nombre": "Cómo implementar la arquitectura mínima viable M1+.md",
+        "extension": "md",
+        "bytes": 13299
+      },
+      {
+        "doc_id": "83b2fcda-6a26-4c07-b37c-170d98ae1e81",
+        "nombre": "sofia_v1x_github_notion.md",
+        "extension": "md",
+        "bytes": 16734
+      },
+      {
+        "doc_id": "5b79a4f1-8022-4400-bc41-bdd83996b8e3",
+        "nombre": "sofia_human_ai_avf_v1x_github_notion.md",
+        "extension": "md",
+        "bytes": 19873
+      },
+      {
+        "doc_id": "23efd2d4-d666-465a-91bf-182d46c40be5",
+        "nombre": "ACTUA POR BLOQUES SECUENCIALMENTE. Sí, intenta rec.md",
+        "extension": "md",
+        "bytes": 23216
+      },
+      {
+        "doc_id": "a9f553f8-6e88-4ffb-b928-4b56a27afa23",
+        "nombre": "Lista TODOS los ficheros y threads que tienes carg.md",
+        "extension": "md",
+        "bytes": 5622
+      },
+      {
+        "doc_id": "fd3e1b7e-26d6-41e7-b037-8798b3653282",
+        "nombre": "Marco SOFIA Human-AI AVF v1.x.md",
+        "extension": "md",
+        "bytes": 20389
+      },
+      {
+        "doc_id": "67203eb4-1686-4969-a025-9f7dd864352e",
+        "nombre": "@GitHub @Linear @Hugging Face @Read AI @AirOps @No.md",
+        "extension": "md",
+        "bytes": 18317
+      },
+      {
+        "doc_id": "480f6d2f-25cb-455f-9aae-ea58770f7200",
+        "nombre": "@BROWSER-AI. INTEGRACION EN PROY. INVESTIGACION DO.md",
+        "extension": "md",
+        "bytes": 15878
+      }
+    ]
+  },
+  "corpus_primario_gescola": {
+    "SRC_PPLX_20260711_0001": {
+      "chunks": 4,
+      "detalle": [
+        {
+          "chunk_id": "SRC-PPLX-20260711-0001-C001",
+          "source_id": "SRC-PPLX-20260711-0001",
+          "chars": 1911,
+          "hash": "4f7283b8",
+          "preview": "# SOFIA Queue Manager: de Test a Piloto de Producción (Gmail real) **Fecha:** 11 de julio de 2026 · **Protocolo:** Prot"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260711-0001-C002",
+          "source_id": "SRC-PPLX-20260711-0001",
+          "chars": 3561,
+          "hash": "c126ec68",
+          "preview": "## 2\\. VARIABLES Y DISEÑO EXPERIMENTAL **Variables independientes (las que se ajustan):** — `confidence_threshold_hootl"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260711-0001-C003",
+          "source_id": "SRC-PPLX-20260711-0001",
+          "chars": 3218,
+          "hash": "90228620",
+          "preview": "## 5\\. FASE AJUSTE FINO: BUCLE DE MEJORA Artefacto: **`fine_tuning_advisor.py`** (entregado). Analiza `errores_ciclo_N."
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260711-0001-C004",
+          "source_id": "SRC-PPLX-20260711-0001",
+          "chars": 1392,
+          "hash": "eda8a2a6",
+          "preview": "## 8\\. REGISTRO, TRAZABILIDAD Y CALENDARIO **Estructura de archivos (nueva carpeta `eval\\` en `C:\\Sofia_Production\\`):*"
+        }
+      ]
+    },
+    "SRC_PPLX_20260901_0002": {
+      "chunks": 11,
+      "detalle": [
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C001",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "f305b3f0",
+          "preview": " Informe_Gestion_Colas_SOFIA_HumanAI_AVF_2026-09-01 Autor: AVFrere (Copiloto de Dirección) · Destinatario: Alberto Vila"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C002",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "dfca5717",
+          "preview": " * 2.7 protEARS · Razonar — rediseño propuesto: SOFIA-QUEUE * 2.8 protEARS · Sandbox — experimento EARS-QUEUE-01 "
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C003",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "5ce9d108",
+          "preview": "uivalente en adelante\", y esa misma sesión lo interpretó como renovación de ProtAutom (ciclo de 5 fases: Explicación→Aut"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C004",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "057326d8",
+          "preview": "el resto del informe. 2.3 protEARS · Explorar — cómo gestiona SOFIA sus colas hoy, en los hechos Verificado en vivo (N"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C005",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "eb460d9a",
+          "preview": "etas cada vez. Sin un campo de puntuación persistente ni una vista pre-filtrada, cada sesión paga el mismo coste de \"rec"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C006",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "abcf81bb",
+          "preview": "su cuello de botella único; optimizar cualquier otro punto no mejora el total.[^5] Aplicado a SOFIA: el cuello de botell"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C007",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "2995f028",
+          "preview": "ervando el componente de riesgo/seguridad que SOFIA ya prioriza y que WSJF estándar no contempla explícitamente. 5. Mar"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C008",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "071c074c",
+          "preview": "te y ya tiene 2 usos reales; lo que falta —y esto sí sería una propuesta mía, no un hallazgo— es decidir si conviene apl"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C009",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "2a10eb0e",
+          "preview": "jecutado y lo registrado (PROP-A24-02). El contraste con seis marcos externos (WSJF, Kanban/WIP, RICE, Little's Law, The"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C010",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 3800,
+          "hash": "8cd196b9",
+          "preview": "— Patrones de orquestación multiagente 2026 y approval gates para HITL. ⭐⭐⭐ 8. Theory of Constraints (TOC). Lean Produc"
+        },
+        {
+          "chunk_id": "SRC-PPLX-20260901-0002-C011",
+          "source_id": "SRC-PPLX-20260901-0002",
+          "chars": 1943,
+          "hash": "610aea12",
+          "preview": "__________ 5. Propuestas de continuación e iteración * Continuación directa: si apruebas SOFIA-QUEUE conceptualmen"
+        }
+      ]
+    },
+    "SRC_PPLX_20260727_0003": {
+      "chunks": 0,
+      "estado": "DIFERIDO — Apps Script no exportable por conector (T1 documentado); export manual AVF"
+    }
+  },
+  "pendiente": "embeddings multilingües HF (PROC-012) sobre chunks; ejecución diferida a gate de presupuesto GB-1"
+}
