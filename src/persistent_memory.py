@@ -256,3 +256,37 @@ class AgenticLoopWithMemory:
             total_cost_usd=total_cost_usd,
             avg_latency_ms=avg_latency_ms
         )
+
+
+def _start_session_from_env() -> None:
+    """Arranque de sesión MEM-Kore: crea la fila en `agent_sessions` a
+    partir de SUPABASE_URL/SUPABASE_KEY y PROJECT_ID/TASK_SIGNATURE."""
+    import os
+    import sys
+
+    supabase_url = os.environ.get("SUPABASE_URL")
+    supabase_key = os.environ.get("SUPABASE_KEY") or os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    project_id = os.environ.get("PROJECT_ID")
+    task_signature = os.environ.get("TASK_SIGNATURE")
+    model_used = os.environ.get("MODEL_USED")
+
+    missing = [
+        name for name, value in [
+            ("SUPABASE_URL", supabase_url),
+            ("SUPABASE_KEY (o SUPABASE_SERVICE_ROLE_KEY)", supabase_key),
+            ("PROJECT_ID", project_id),
+            ("TASK_SIGNATURE", task_signature),
+        ] if not value
+    ]
+    if missing:
+        print(f"No se pudo arrancar la sesión: faltan variables de entorno: {', '.join(missing)}", file=sys.stderr)
+        sys.exit(1)
+
+    memory = PersistentMemory(supabase_url=supabase_url, supabase_key=supabase_key)
+    loop = AgenticLoopWithMemory(memory=memory, project_id=project_id, task_signature=task_signature)
+    session_id = loop.start_session(model_used=model_used)
+    print(session_id)
+
+
+if __name__ == "__main__":
+    _start_session_from_env()
