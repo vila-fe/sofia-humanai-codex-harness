@@ -73,12 +73,12 @@ chunk_vectorial: [chunk_ids del carril A]  # enlace dual carril A<->B
 
 ## 7. Dependencias y riesgos
 
-- **Depende de:** G2 de SOFIA-RECUPERA (parseo/validación del corpus), sincronización Notion<->Drive pendiente, Silo Perplexity (REM-05).
+- **Estado y dependencias:** el registro [EP-2026-09-26-A](https://app.notion.com/p/3e7e6f2ab4af819882dce400c947bdaa) informa G2 y la sincronización Notion<->Drive como completados. GB-0 sigue **PARCIAL** porque falta el corpus mínimo de >=100 docs indexados en Carril A. Persiste Silo Perplexity (REM-05).
 - **Riesgo principal (stress-test):** activar el Carril B antes del corpus mínimo = infraestructura antes que datos. Mitigado por GB-0 y GB-2.
 - **Riesgo secundario:** deriva de duplicación índice<->canónico. Mitigado por regla de no-duplicación y GB-5.
 
 ## 8. Siguientes pasos
 
-1. GB-0: completar G2 SOFIA-RECUPERA + sincronización Wiki.
+1. GB-0: permanece **PARCIAL**; el requisito de cierre es corpus mínimo Carril A (>=100 docs indexados) + sync Notion<->Drive completada. El EP-2026-09-26-A informa G2 + sync completados; siguiente paso: construir el índice híbrido, con CaseEnvelope (5 EUR / 120 min / 1 retry) y gate HITL antes de ejecutar.
 2. Prototipo del clasificador de nodos a partir de relaciones DEC/PROP/EP existentes (en sofia-twin-digital-avf).
 3. Ejecutar mini-bench (GB-2) -> decisión HITL (GB-3).
