@@ -1,0 +1,15 @@
+{
+  "_nota": "Goldens GB-1: 10 consultas reales de ejemplo con docs esperados del manifest. AVF añade/sustituye por consultas reales (regla: conjunto de oro real, Informe Cluster Memorias 02/10). query_vector se genera en el primer run con el mismo motor.",
+  "ejemplos": [
+    {"query": "Que decision regula la trazabilidad de procedencia en Episodios"},
+ {"query": "Como funciona la cascada del Router Sofia"},
+ {"query": "Que es el atomizador de memoria DEC-MEM-ATOMO-001"},
+ {"query": "Cual es el estado del piloto GESCOLA de silos Perplexity"},
+ {"query": "Que dice la spec GraphRAG sobre el Carril B de grafo"},
+ {"query": "Quien homologa DeepSeek Flash y en que nivel H"},
+ {"query": "Politica HITL para conectores productivos"},
+ {"query": "Queries v2 del Radar semanal y su gate"},
+ {"query": "Sandbox canario G2 proposito y contenido"},
+ {"query": "Reglamento SOFIA convenciones canonicas indice"}
+  ]
+}
