@@ -1,12 +1,75 @@
-[
-  {"query": "que repos forman el stack SOFIA y su estado", "expected_doc_id": "REPOS-STACK"},
-  {"query": "como se atomiza la memoria para la Unidad Cognitiva", "expected_doc_id": "DEC-MEM-ATOMO-001"},
-  {"query": "cascada del router LLM y ahorro de coste Jev", "expected_doc_id": "PROP-JEV-CASCADA-001"},
-  {"query": "protocolo de revision de espacios de Perplexity", "expected_doc_id": "SKILL-REVISA-ESPACIOS"},
-  {"query": "indexacion hibrida del carril A", "expected_doc_id": "SPEC-GRAPHRAG-001"},
-  {"query": "reglas de gobernanza HITL HOTL HOOTL", "expected_doc_id": "KBD-HUMANAI"},
-  {"query": "radar sofia vigilancia semanal y diaria", "expected_doc_id": "DEC-MACQAS-001"},
-  {"query": "gescola gestion de silos y export perplexort", "expected_doc_id": "PROP-GESCOLA-PUENTE-001"},
-  {"query": "escudo claves rotacion y blindaje de credenciales", "expected_doc_id": "PROP-SP04"},
-  {"query": "nucleo duro clones gestores definicion", "expected_doc_id": "PROP-NUCLEO-DURO-001"}
-]
+{
+  "_procedencia": {
+    "padre": "EP-2026-10-05-C",
+    "gb0": "EP-2026-10-04-I",
+    "spec": "SPEC-GRAPHRAG-001",
+    "proc": "PROC-012",
+    "nota": "Conjunto de oro v0.1: 10 consultas semilla para el gate hit-rate@5 >= 70% (GB-1). Los expected_chunk_ids se cotejan con los chunk_id del manifest-v0.1.json."
+  },
+  "cases": [
+    {
+      "query": "¿Qué es el Marco SOFIA y sus cuatro principios?",
+      "expected_chunk_ids": [
+        "carril-a-marco-sofia-def",
+        "carril-a-marco-sofia-principios"
+      ]
+    },
+    {
+      "query": "Niveles de supervisión HITL HOTL HOOTL definiciones",
+      "expected_chunk_ids": [
+        "carril-a-hitl-def",
+        "carril-a-supervision-niveles"
+      ]
+    },
+    {
+      "query": "PROC-010 aprobado no significa ejecutado",
+      "expected_chunk_ids": [
+        "carril-a-proc010"
+      ]
+    },
+    {
+      "query": "Bloque de Procedencia estructura y campos",
+      "expected_chunk_ids": [
+        "carril-a-procedencia-bloque"
+      ]
+    },
+    {
+      "query": "DEC-073 criterios de ponderación de pendientes",
+      "expected_chunk_ids": [
+        "carril-a-dec073"
+      ]
+    },
+    {
+      "query": "Router Sofia conectividad y gestión de conectores",
+      "expected_chunk_ids": [
+        "carril-a-router-sofia"
+      ]
+    },
+    {
+      "query": "Radar Sofia investigación documental flujo",
+      "expected_chunk_ids": [
+        "carril-a-radar-sofia"
+      ]
+    },
+    {
+      "query": "chunking híbrido vectorial grafo DEC-MEM-ATOMO-001",
+      "expected_chunk_ids": [
+        "carril-a-dec-mem-atomo-001"
+      ]
+    },
+    {
+      "query": "Unidad Cognitiva arquitectura MEM-KORE Wiki KBD",
+      "expected_chunk_ids": [
+        "carril-a-unidad-cognitiva",
+        "carril-a-mem-kore"
+      ]
+    },
+    {
+      "query": "guardarraíles antiinyección medidas de seguridad stack",
+      "expected_chunk_ids": [
+        "carril-a-protEARS",
+        "carril-a-seguridad-guardarrailes"
+      ]
+    }
+  ]
+}
