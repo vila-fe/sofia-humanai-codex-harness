@@ -1,0 +1,12 @@
+[
+  {"query": "que repos forman el stack SOFIA y su estado", "expected_doc_id": "REPOS-STACK"},
+  {"query": "como se atomiza la memoria para la Unidad Cognitiva", "expected_doc_id": "DEC-MEM-ATOMO-001"},
+  {"query": "cascada del router LLM y ahorro de coste Jev", "expected_doc_id": "PROP-JEV-CASCADA-001"},
+  {"query": "protocolo de revision de espacios de Perplexity", "expected_doc_id": "SKILL-REVISA-ESPACIOS"},
+  {"query": "indexacion hibrida del carril A", "expected_doc_id": "SPEC-GRAPHRAG-001"},
+  {"query": "reglas de gobernanza HITL HOTL HOOTL", "expected_doc_id": "KBD-HUMANAI"},
+  {"query": "radar sofia vigilancia semanal y diaria", "expected_doc_id": "DEC-MACQAS-001"},
+  {"query": "gescola gestion de silos y export perplexort", "expected_doc_id": "PROP-GESCOLA-PUENTE-001"},
+  {"query": "escudo claves rotacion y blindaje de credenciales", "expected_doc_id": "PROP-SP04"},
+  {"query": "nucleo duro clones gestores definicion", "expected_doc_id": "PROP-NUCLEO-DURO-001"}
+]
