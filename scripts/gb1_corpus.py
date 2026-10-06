@@ -11,8 +11,7 @@ Funciones:
   - verify : gate PASS/FAIL — todos los expected_chunk_ids del golden set existen y sin duplicados.
 
 Los textos son extractos canónicos verbatim de las fuentes del Programa (Reglamento SOFIA,
-MEM-KORE §7, decisiones y specs), sin secretos ni datos personales (regla de datos sintéticos N/A:
-son textos canónicos del propio programa, citando fuente en cada chunk).
+MEM-KORE §7, decisiones y specs), sin secretos ni datos personales, citando fuente en cada chunk.
 
 Uso:
   python scripts/gb1_corpus.py gen    [--out docs/index/carril-a/corpus-carril-a-v0.1.json]
@@ -46,7 +45,7 @@ CHUNKS = {
         "AVF; mantener trazabilidad citando fuentes y registrando la cadena de pensamiento; respetar las "
         "políticas de IP (CC-BY-SA para el marco base; licencia comercial para CATA). Límites "
         "computacionales declarados: PC de 8-16 GB RAM, ~40 h/semana disponibles; evaluar siempre las "
-        "capas de menor coste antes de escalar a nube. [Fuente: Reglamento SOFIA / marco base]",
+        "capas de menor coste antes de escalar a nube. [Fuente: Reglamento SOFIA / marco base]"
     ),
     "carril-a-marco-sofia-principios": (
         "Marco SOFIA — cuatro principios operativos (S-I-F-A). 1) SISTÉMICO: cada análisis debe considerar "
@@ -56,7 +55,7 @@ CHUNKS = {
         "deben escalar sin rediseño fundamental. Los cuatro principios se refuerzan simultáneamente como "
         "capa transversal del programa: la frugalidad es credencial competitiva, no handicap (PAT-001), y "
         "el mal ROI de la IA en empresa se debe a gobernanza ausente, no a límites técnicos (PAT-002). "
-        "[Fuente: Reglamento SOFIA §principios; MEM-KORE §2 PAT-001/002]",
+        "[Fuente: Reglamento SOFIA principios; MEM-KORE §2 PAT-001/002]"
     ),
     "carril-a-hitl-def": (
         "HITL (Human-In-The-Loop): nivel de supervisión en el que ninguna decisión crítica se toma sin "
@@ -66,7 +65,7 @@ CHUNKS = {
         "recomendación) y espera el sí explícito de AVF antes de ejecutar; la aprobación queda registrada "
         "en Decisiones SOFIA con Bloque de Procedencia. La aprobación HITL habilita la ejecución pero no "
         "la sustituye: tras el sí, se verifica en la fuente real que la tarea se ejecutó (PROC-010, "
-        "aprobado no significa ejecutado). [Fuente: Reglamento SOFIA gobernanza; marco KBD Human-AI]",
+        "aprobado no significa ejecutado). [Fuente: Reglamento SOFIA gobernanza; marco KBD Human-AI]"
     ),
     "carril-a-supervision-niveles": (
         "Niveles de supervisión del Stack SOFIA. HITL (Human-In-The-Loop): decisión crítica, requiere "
@@ -77,7 +76,7 @@ CHUNKS = {
         "—reversibles, sin contraseñas, sin órdenes de pago— AVF prefiere modalidad HOOTL: actuar sin "
         "pedir confirmación y reportar al cierre; HITL se reserva para lo crítico. Verificar siempre en "
         "la fuente real antes que fiarse del registro narrativo (DEC-071). [Fuente: regla permanente AVF "
-        "24/09; PROP-SUPERV-001]",
+        "24/09; PROP-SUPERV-001]"
     ),
     "carril-a-proc010": (
         "PROC-010 — Verificación Sistémica de Trazabilidad (aprobado ≠ ejecutado). Principio rector: una "
@@ -90,7 +89,7 @@ CHUNKS = {
         "propuestas nuevas; nunca marcar nada como ejecutado durante la detección. Disparadores: cierre "
         "de sesión con ≥3 decisiones nuevas, ciclo semanal (últimas 1-2 semanas), ciclo mensual (barrido "
         "completo desde el origen) y demanda explícita de AVF. Métrica de salud: aprobadas sin Resultado "
-        "con antigüedad >2 semanas, tendencia decreciente. [Fuente: MEM-KORE §7 PROC-010]",
+        "con antigüedad >2 semanas, tendencia decreciente. [Fuente: MEM-KORE §7 PROC-010]"
     ),
     "carril-a-procedencia-bloque": (
         "Bloque de Procedencia (DEC-TRAZ-REG-001): todo registro de Episodios, Decisiones y fichas SACR-A "
@@ -101,7 +100,7 @@ CHUNKS = {
         "Regla anti-colisión: pre-inserción consultar la BD por prefijo de fecha, post-inserción verificar "
         "unicidad del código; los códigos son inmutables salvo que tengan cero referencias entrantes; la "
         "verificación anti-colisión se ejecuta en el instante de la inserción, no en el arranque de la "
-        "sesión. [Fuente: DEC-TRAZ-REG-001 v1.1; EP-2026-10-06-L]",
+        "sesión. [Fuente: DEC-TRAZ-REG-001 v1.1; EP-2026-10-06-L]"
     ),
     "carril-a-dec073": (
         "DEC-073 — Ponderación objetiva de pendientes (momento/inercia real). Criterios con pesos: V "
@@ -112,7 +111,7 @@ CHUNKS = {
         "variable en escala 0-10. Sin datos para un criterio se marca ND y se usa el valor neutro, nunca "
         "se inventa. La ponderación es informativa para AVF: orienta, no sustituye su criterio. Sirve "
         "para jerarquizar la cola de pendientes y separar el Top-3 de acción inmediata de los quick wins "
-        "agrupables en un lote. [Fuente: DEC-073; skill sofia-verifica-pendientes v0.2]",
+        "agrupables en un lote. [Fuente: DEC-073; skill sofia-verifica-pendientes v0.2]"
     ),
     "carril-a-router-sofia": (
         "Router Sofia — capa de decisión y conectividad LLM del Stack SOFIA. Implementación real (no mock) "
@@ -123,7 +122,7 @@ CHUNKS = {
         "84,0% vs 84,4% acierto. DEC-ANYJEV-001: AnyJev (Nokia, open-source) candidato de capa 1. DeepSeek "
         "V4.1 Flash homologación H-2 como motor frugal candidato de SOFIA-RECUPERA. Trazabilidad del Router: "
         "registro de discrepancias router vs AVF durante el piloto. [Fuente: PROP-JEV-CASCADA-001; "
-        "DEC-ANYJEV-001; Knowledge sofia-human-ai]",
+        "DEC-ANYJEV-001; Knowledge sofia-human-ai]"
     ),
     "carril-a-radar-sofia": (
         "Radar Sofia — ciclo de vigilancia estratégica del Programa SOFIA (Radar→Conocimiento→Unidad "
@@ -133,7 +132,7 @@ CHUNKS = {
         "08:20 Europe/Madrid, captura y prefiltro determinista TDS, fichas RD-D-* en SACR-A, episodio solo "
         "si hay hallazgo crítico. Fichas de vigilancia con grado SOFIA (p. ej. ALTO-CRÍTICO en Harness/"
         "Graph/Loop Engineering). El Radar alimenta la base Señales SOFIA/SACR-A, no MEM-KORE §6 (vista "
-        "histórica congelada). [Fuente: DEC-076; SP-RD1; B4-L4]",
+        "histórica congelada). [Fuente: DEC-076; SP-RD1; B4-L4]"
     ),
     "carril-a-dec-mem-atomo-001": (
         "DEC-MEM-ATOMO-001 — chunking híbrido vectorial-grafo para la memoria. Lo generado en cada sesión "
@@ -143,7 +142,7 @@ CHUNKS = {
         "si el mini-bench ≥50 consultas muestra ≥20% de consultas multi-hop). Los átomos MacQAS (átomo→"
         "episodio→decisión, con vínculos Padre/uid) heredan el ciclo MEM-KORE completo: percibir→indexar→"
         "reflexionar→actualizar→trazar. Context engineering aplicado: la ingesta explícita UC/Wiki forma "
-        "parte del acceso al Núcleo Duro. [Fuente: DEC-MEM-ATOMO-001; SPEC-GRAPHRAG-001 v1.0; PROP-HGL-001]",
+        "parte del acceso al Núcleo Duro. [Fuente: DEC-MEM-ATOMO-001; SPEC-GRAPHRAG-001 v1.0; PROP-HGL-001]"
     ),
     "carril-a-unidad-cognitiva": (
         "Unidad Cognitiva (UC) — arquitectura cognitiva del Programa SOFIA: MEM-KORE (memoria dinámica) + "
@@ -154,7 +153,7 @@ CHUNKS = {
         "mientras el umbral no se alcance, la UC opera como loop bien diseñado dentro del harness "
         "existente (MEM-KORE + Carril A + enjambre MacQAS), sin orquestador-worker ni handoffs entre nodos "
         "LLM. Política de compaction v0.1 de la memoria episódica: ventana activa 30 días + síntesis "
-        "mensual como índice, sin borrar episodios. [Fuente: DEC-UC-HGL-R1; DEC-KBD; PROP-HGL 04/10]",
+        "mensual como índice, sin borrar episodios. [Fuente: DEC-UC-HGL-R1; DEC-KBD; PROP-HGL 04/10]"
     ),
     "carril-a-mem-kore": (
         "MEM-KORE v1.0 — Memoria Dinámica SOFIA (Notion, bajo el Programa SOFIA Human AI AVFEARS). "
@@ -166,7 +165,7 @@ CHUNKS = {
         "mantenimiento con ciclo semanal (~20 min, lunes) y ciclo mensual (~45 min, primer lunes: grafo, "
         "confianza de patrones, PROC-010 barrido completo, procedimientos, verificación de vistas). "
         "Bases vivas vinculadas: Episodios SOFIA, Decisiones SOFIA, Señales, Patrones, Propuestas. "
-        "[Fuente: MEM-KORE v1.0]",
+        "[Fuente: MEM-KORE v1.0]"
     ),
     "carril-a-protEARS": (
         "ProtEARS — protocolo de cierre canónico del programa (Cierre3/ProtEARS pasa a CANONICAL el "
@@ -177,7 +176,7 @@ CHUNKS = {
         "Decisiones SOFIA antes de cerrar; escrituras de la sesión y no-acciones; pendientes AVF "
         "declarados; y Bloque de Procedencia. Madurez del protocolo evaluada en 3,18/5 (revisión 04/10) "
         "con puntos de mejora hacia v2. Registro ≠ cierre: un registro intermedio no es acta de cierre. "
-        "[Fuente: acta G4/G5 02/10; EP-2026-10-04-L]",
+        "[Fuente: acta G4/G5 02/10; EP-2026-10-04-L]"
     ),
     "carril-a-seguridad-guardarrailes": (
         "Guardarraíles de seguridad del Stack SOFIA (PROP-SP04 ESCUDO-CLAVES, aprobada 04/10): rotación "
@@ -188,13 +187,19 @@ CHUNKS = {
         "Credential Manager; tokens de mínimo privilegio (hallazgo DEC-042: 403 por token sin permiso de "
         "creación de repos). Remediación previa: URL de webhook expuesta en 3 docs de Drive (1 público), "
         "copias redactadas creadas; Gate P0 Supabase cerrado (RLS 21/21 tablas activo). "
-        "[Fuente: PROP-SP04; DEC-042; Gate P0]",
+        "[Fuente: PROP-SP04; DEC-042; Gate P0]"
     ),
 }
 
+
+def _as_text(value):
+    return value[0] if isinstance(value, tuple) else value
+
+
 def build_entries():
     entries = []
-    for chunk_id, text in CHUNKS.items():
+    for chunk_id, raw in CHUNKS.items():
+        text = _as_text(raw)
         entries.append({
             "chunk_id": chunk_id,
             "source_id": "carril-a-canonicos",
@@ -221,7 +226,7 @@ def cmd_gen(args):
     }
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[OK] {len(entries)} chunks -> {args.out} | dedupe sha256 OK | determinista (sin seed: texto fijo)")
+    print(f"[OK] {len(entries)} chunks -> {args.out} | dedupe sha256 OK | determinista (texto fijo)")
     print(f"[HECHO] manifest={args.out} | compatible con gb1_embeddings.py index --manifest {args.out}")
 
 
