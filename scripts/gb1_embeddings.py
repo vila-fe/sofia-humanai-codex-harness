@@ -16,7 +16,7 @@ El fallback por hash determinista (SinHT) solo cubre el smoke test; NO sustituye
 modelo en producción (decisión PROC-012). Salidas HECHOS medidos, no inferencias.
 
 Uso:
-  python scripts/gb1_embeddings.py index  [--manifest docs/index/carril-a/manifest-v0.1.json]
+  python scripts/gb1_embeddings.py index  [--manifest docs/index/carril-a/corpus-carril-a-v0.1.json]
                                           [--db data/carril_a_embeddings.sqlite]
   python scripts/gb1_embeddings.py search "consulta" [--top 5]
   python scripts/gb1_embeddings.py eval   [--golden docs/index/carril-a/golden_set_v0.1.json]
@@ -30,7 +30,7 @@ import sys
 from pathlib import Path
 
 DEFAULT_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
-DEFAULT_MANIFEST = "docs/index/carril-a/manifest-v0.1.json"
+DEFAULT_MANIFEST = "docs/index/carril-a/corpus-carril-a-v0.1.json"
 DEFAULT_GOLDEN = "docs/index/carril-a/golden_set_v0.1.json"
 DEFAULT_DB = "data/carril_a_embeddings.sqlite"
 HIT_RATE_GATE = 0.70  # >= 70% hit-rate@5 (gate GB-1)
@@ -166,6 +166,8 @@ def cmd_eval(args):
     if not p.exists():
         sys.exit(f"[ERROR] conjunto de oro no encontrado: {p}")
     golden = json.loads(p.read_text(encoding="utf-8"))
+    if isinstance(golden, dict) and "cases" in golden:
+        golden = golden["cases"]  # fix: golden_set v0.1 envuelve los casos en "cases"
     hits = 0
     total = 0
     for case in golden:
