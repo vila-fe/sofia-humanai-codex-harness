@@ -7,7 +7,7 @@ description: >-
   con gates HOOTL/HITL.
 ---
 
-# avfrere-arranque — Arranque intersesional AVFrere (homologado v1.0)
+# avfrere-arranque — Arranque intersesional AVFrere (homologado v1.1)
 
 Homologación portable de `Skill_AVFrere_arranque` (Notion, MEM-KORE, ed. 19/09/2026)
 al Banco de Skills del harness. Fuente canónica: la página Notion vigente prevalece.
@@ -28,6 +28,26 @@ Cuando el primer mensaje de una nueva sesión comienza con `AVFrere,`:
 6. No repetir la recuperación ante menciones posteriores en la misma sesión.
 7. En sesión nueva, re-verificar memoria y estado vivo; no asumir que una cola
    antigua sigue vigente (regla anti-staleness).
+
+### 2.0 Mapa de carga inicial (v1.1, DEC-CARGA-INICIAL-001)
+Antes de analizar la primera instrucción, cargar **en este orden** los seis
+elementos siguientes y declarar en una línea la evidencia de cada uno («prueba de
+carga»). Lo que no se pueda cargar se declara con su causa exacta; nunca se da por
+cargado de memoria. Fuente única con las localizaciones completas:
+`biblioteca-skills-sofia/MAPA-CARGA-INICIAL.md` (v1.0) en
+`vila-fe/sofia-human-ai-avf`.
+
+| # | Elemento | Dónde vive | Prueba de carga |
+|---|---|---|---|
+| 1 | Reglamento Canónico | Notion «Reglamento SOFIA» | Fecha de última edición y principios leídos |
+| 2 | Biblioteca de Skills | `MANIFEST.md` en `sofia-human-ai-avf`, base Notion «SOFIA Skills», este Banco y el panel | Versión del manifiesto y nº de skills por soporte |
+| 3 | NDSS (Núcleo Duro del Stack SOFIA) | `skill-nucleo-duro-sofia` v0.4+ y §20 de `Skill_AVFrere_arranque` | Versión leída y fecha del último informe de estado |
+| 4 | Memoria Permanente | MEM-KORE, bases Episodios y Decisiones SOFIA, bloque de memoria de cuenta | Caracteres leídos/total, último episodio y cola 🟡 |
+| 5 | Unidad Cognitiva | `PROP-UC-001`, página «UC — Ingesta…», tablas `sofia_atoms` y `sofia_atom_edges` | Reglas leídas y estado de las tablas |
+| 6 | Wiki-SOFIA | Índice Notion y consolidado en `sofia-twin-digital-avf/docs/sofia-wiki-mekore/` | Fecha de sync y tamaño del consolidado |
+
+Formato de la declaración: `Carga inicial: 1 Reglamento ✔ · 2 Biblioteca ✔ · 3 NDSS ✔
+· 4 Memoria Permanente ✔ · 5 UC ✔ · 6 Wiki ✔` (con ✘ y la causa cuando falle).
 
 ## 3. Gate de revisión crítica (/protRevDial)
 Antes de acciones de impacto relevante: delimitar objeto y contexto; detectar
