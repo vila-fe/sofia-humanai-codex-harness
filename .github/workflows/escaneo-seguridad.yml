@@ -1,0 +1,34 @@
+name: Escaneo de seguridad del repositorio
+
+# Comprobación obligatoria para proteger main (compromiso intermedio decidido por AVF, 07/10/2026; camino B).
+# Falla (exit 1) si el escaneo da algún FAIL: caracteres invisibles, secretos, órdenes de ignorar instrucciones
+# u ocultar acciones al usuario, o ficheros demasiado grandes para escanear.
+# Seguridad del propio flujo: solo la acción oficial actions/checkout, permisos de solo lectura, sin secretos,
+# y pull_request (no pull_request_target) para que un PR de un fork no corra con permisos de escritura.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # Control DETECTIVO (no previene): cada lunes revisa main. Las ejecuciones programadas solo corren desde la rama
+  # por defecto, y en repos públicos GitHub puede desactivarlas tras un periodo sin actividad (comprobar en la
+  # documentación vigente y reactivar a mano si ocurre).
+  schedule:
+    - cron: "41 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  escaneo-seguridad:
+    name: escaneo-seguridad
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Ejecutar el escaneo (python estándar, sin dependencias)
+        run: python3 -I -B scripts/sofia_escaneo_seguridad.py --dir .
