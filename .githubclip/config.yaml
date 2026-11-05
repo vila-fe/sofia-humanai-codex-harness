@@ -1,0 +1,88 @@
+# githubclip Configuration
+# Generado por /githubclip-init (preset full) el 05/11/2026.
+# Pendiente: project_id, field_id, option_ids y etiquetas (requieren token con permisos de Projects y etiquetas).
+version: 2
+
+provider: github
+
+github:
+  owner: "vila-fe"
+  repo: "sofia-humanai-codex-harness"
+  user_name: "vila-fe"
+
+  project:
+    owner_type: "user"
+    owner_login: "vila-fe"
+    project_number: null
+    project_id: null
+
+  fields:
+    status:
+      field_id: null
+      name: "Status"
+      option_ids:
+        todo: null
+        in_progress: null
+        in_review: null
+        done: null
+        canceled: null
+    priority:
+      field_id: null
+      name: "Priority"
+      option_ids:
+        urgent: null
+        high: null
+        medium: null
+        low: null
+        none: null
+
+  api_mode: "mcp_only"
+
+  strict_mode: true
+  queue_source: "project_items"
+  close_on_done: false
+
+heartbeat:
+  max_issues_per_heartbeat: 2
+  stale_lock_hours: 4
+  max_consecutive_failures: 3
+  backoff_multiplier: 2
+  quiet_hours:
+    enabled: false
+    timezone: "Europe/Madrid"
+    start: "22:00"
+    end: "07:00"
+    behavior: "skip"
+
+labels:
+  group: "githubclip"
+  working: "agent-working"
+  blocked: "agent-blocked"
+
+personas:
+  orchestrator:
+    path: "personas/orchestrator"
+    label: null
+    is_default: true
+  ceo:
+    path: "personas/ceo"
+    label: "ceo"
+  backend:
+    path: "personas/backend"
+    label: "backend"
+  frontend:
+    path: "personas/frontend"
+    label: "frontend"
+  infra:
+    path: "personas/infra"
+    label: "infra"
+  qa:
+    path: "personas/qa"
+    label: "qa"
+
+antifragile:
+  degradation_enabled: true
+  circuit_breaker_threshold: 3
+  canary_check_enabled: true
+  reconciliation_pass_enabled: false
+  recovery_journal_enabled: true

@@ -1,0 +1,15 @@
+name: Infra
+role: infrastructure
+label: infra
+escalates_to: ceo
+
+required_tools:
+  - github                              # Issues, branches, pull requests, workflow files
+
+runtime:
+  model: sonnet                         # Pipeline and config work needs care; not max
+  thinking_effort: medium
+  max_turns: 60
+  enable_chrome: false
+  timeout: 0
+  extra_args: []

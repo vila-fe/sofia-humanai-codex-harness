@@ -1,0 +1,16 @@
+name: CEO
+role: strategist
+label: ceo
+escalates_to: board
+
+required_tools:
+  - github                              # GitHub issue management
+
+runtime:
+  model: sonnet                         # Strategic thinking needs good reasoning, not max
+  thinking_effort: high
+  max_turns: 100
+  enable_chrome: false
+  timeout: 0
+  extra_args: []
+

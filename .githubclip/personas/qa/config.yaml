@@ -1,0 +1,15 @@
+name: QA
+role: quality
+label: qa
+escalates_to: ceo
+
+required_tools:
+  - github                              # Issues, pull request reads, comments
+
+runtime:
+  model: sonnet                         # Verification reasoning matters; not max
+  thinking_effort: medium
+  max_turns: 60
+  enable_chrome: false
+  timeout: 0
+  extra_args: []
