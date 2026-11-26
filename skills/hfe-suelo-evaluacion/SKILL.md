@@ -8,7 +8,7 @@ description: >-
   formato de la suite, métricas pass@1 / family-pass con cota Wilson 95%,
   umbral canónico de suelo y registro de política JSONL. Disparadores:
   "carga los prompts HFE", "evalúa el suelo", "suelo HFE".
-version: v0.1 (VALIDADA-importación: ficha espejo Notion creada 26/11; auditoría revisa-efectividad PASS 11/11; CI escaneo-seguridad PASS. CANDIDATO para el dataset real)
+version: v0.1 (VALIDADA-importación 26/11: ficha espejo Notion, auditoría revisa-efectividad PASS 11/11, CI PASS. Auditoría de efectividad del motor PASS A-D 26/11 con subconjunto real 2/112; PENDIENTE: re-auditar con la partición completa tras el zip de Kaggle)
 padre: llm-as-a-verifier#3 (Suelo HFE)
 componentes: llm_verifier/hfe_floor.py · scripts/ingest_hfe_public.py · scripts/run_hfe_floor.py · criteria/hfe_floor.md · data/hfe_floor_trajs/hfe_taxonomy.json
 ficha-espejo: https://app.notion.com/p/424e6f2ab4af818da718fa066d7651b2 (base «SOFIA Skills — Reusable Workflows», 26/11/2026)
